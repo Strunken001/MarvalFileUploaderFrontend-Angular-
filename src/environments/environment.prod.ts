@@ -1,3 +1,8 @@
 export const environment = {
-  production: true
+  production: true,
+  ExternalService: {
+    FileService: {
+      baseUrl: "https://localhost:7023/",
+    }
+  }
 };

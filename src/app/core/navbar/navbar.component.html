@@ -1,0 +1,48 @@
+<nav class="navbar navbar-inner navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button
+        type="button"
+        class="navbar-toggle"
+        (click)="isCollapsed = !isCollapsed"
+      >
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar" router>Uploaded File</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" routerLink="/customers">
+        <img src="assets/images/fileIcon3.png" alt="logo" />
+       <a routerLink="/">  <span class="app-title">Marval Uploader</span></a>
+      </a>
+
+      <span class="navbar-collapse" [attr.data-collapse]="isCollapsed">
+        <ul class="nav navbar-nav nav-pills navBarPadding">
+          <li routerLinkActive="active">
+            <a routerLink="/file">Upload File</a>
+          </li>
+          <!-- <li>
+            <ng-container *ngIf="isLogged !== ''; else loggedOut">
+              <button
+                class="btn btn-danger"
+                (click)="logOut()"
+              >
+                Log out
+              </button>
+            </ng-container>
+
+            <ng-template #loggedOut>
+              <button
+                class="btn btn-success"
+                (click)="logIn()
+                "
+              >
+                Log in
+              </button>
+            </ng-template>
+          </li> -->
+        </ul>
+      </span>
+    </div>
+  </div>
+</nav>

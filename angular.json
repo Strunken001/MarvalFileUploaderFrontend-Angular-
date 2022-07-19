@@ -2,6 +2,7 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
+  
   "projects": {
     "Marval": {
       "projectType": "application",
@@ -96,12 +97,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
-            ],
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+               ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "38cea906-c941-417b-840a-d200b225b690"
   }
 }
